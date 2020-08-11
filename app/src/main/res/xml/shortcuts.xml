@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <shortcut
+        android:enabled="true"
+        android:icon="@mipmap/videocall"
+        android:shortcutDisabledMessage="@string/message_disabled_message"
+        android:shortcutId="button4"
+        android:shortcutLongLabel="@string/message_shortcut_long_label"
+        android:shortcutShortLabel="@string/message_shortcut_short_label"
+        tools:targetApi="n_mr1">
+
+        <!--  i have declared main activity also to maintain back stack -->
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.indie.cam.MainActivity"
+            android:targetPackage="com.indie.cam" />
+
+        <!-- this activity will open when this shortcut clicked -->
+        <intent
+
+            android:action="android.intent.action.CONFERENCE"
+            android:targetClass="com.indie.cam.ShortcutIntentForwardingActivity"
+            android:targetPackage="com.indie.cam" />
+
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the list determines what the user sees when
+             they launch this shortcut. -->
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut
+        android:enabled="true"
+        android:icon="@mipmap/phone"
+        android:shortcutDisabledMessage="@string/message_disabled_message"
+        android:shortcutId="button5"
+        android:shortcutLongLabel="@string/message_shortcut2_long_label"
+        android:shortcutShortLabel="@string/message_shortcut2_short_label"
+        tools:targetApi="n_mr1">
+
+        <!--  i have declared main activity also to maintain back stack -->
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.indie.cam.MainActivity"
+            android:targetPackage="com.indie.cam" />
+
+        <!-- this activity will open when this shortcut clicked -->
+        <intent
+
+            android:action="android.intent.action.CONFERENCE"
+            android:targetClass="com.indie.cam.ShortcutaudioIntentForwardingActivity"
+            android:targetPackage="com.indie.cam" />
+
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the list determines what the user sees when
+             they launch this shortcut. -->
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut
+        android:enabled="true"
+        android:icon="@mipmap/multipartycall"
+        android:shortcutDisabledMessage="@string/message_disabled_message"
+        android:shortcutId="button6"
+        android:shortcutLongLabel="@string/message_shortcut3_long_label"
+        android:shortcutShortLabel="@string/message_shortcut3_short_label"
+        tools:targetApi="n_mr1">
+
+        <!--  i have declared main activity also to maintain back stack -->
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.indie.cam.MainActivity"
+            android:targetPackage="com.indie.cam" />
+
+        <!-- this activity will open when this shortcut clicked -->
+        <intent
+
+            android:action="android.intent.action.CONFERENCE"
+            android:targetClass="com.indie.cam.ShortcutJitsiIntentForwardingActivity"
+            android:targetPackage="com.indie.cam" />
+
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the list determines what the user sees when
+             they launch this shortcut. -->
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <!-- Specify more shortcuts here. -->
+</shortcuts>

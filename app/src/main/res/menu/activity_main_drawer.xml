@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="none"
+           android:id="@+id/menu_1">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/howto"
+            android:icon="@mipmap/settings"
+            android:title="@string/how_to" />
+    </group>
+    <group android:checkableBehavior="none"
+           android:id="@+id/menu_2">
+        <item
+            android:id="@+id/lod"
+            android:icon="@mipmap/idea_links"
+            android:title="@string/link_of_the_day" />
+        </group>
+        <group android:checkableBehavior="none"
+               android:id="@+id/menu_3">
+        <item android:id="@+id/share"
+            android:icon="@mipmap/share"
+            android:title="@string/share" />
+        <item
+            android:id="@+id/rate"
+            android:icon="@mipmap/star"
+            android:title="@string/rate_app" />
+            <item
+                android:id="@+id/IndieChat"
+                android:icon="@mipmap/paid_version"
+                android:title="@string/IndieChat" />
+        </group>
+        <group android:checkableBehavior="none"
+               android:id="@+id/menu_4">
+            <item
+                android:id="@+id/like"
+                android:icon="@mipmap/like"
+                android:title="@string/like" />
+            <item
+            android:id="@+id/email"
+            android:icon="@mipmap/email"
+            android:title="@string/isemail" />
+        <item
+            android:id="@+id/about"
+            android:icon="@mipmap/info"
+            android:title="@string/about" />
+
+    </group>
+
+</menu>
